@@ -3,6 +3,7 @@
 $("#search_button_holder").on("click", function() {
 	//run api query function
 	//run displayResults function
+	displayResults();
 });
 
 //Clear button functionality
