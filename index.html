@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>New York Times Search</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+    <header class=jumbotron>
+        <div>
+            <img id="magnifyingGlass" src="assets/images/magnifyingGlass.png" alt="magnifying glass">
+            <span id="headerTitle">New York Times Search</span>
+            <img id="newspaper" src="assets/images/newspaper.png" alt="magnifying glass">
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="formHeading">
+            Search Parameters
+        </div> <!-- end of formHeading -->
+        <div id="formContainer">
+            <form id="submitForm" action="/action_page.php">
+                Search Term:
+                <br>
+                <input type="text" name="searchTerm" value="marmots">
+                <br>
+                Number of Records to Retrieve
+                <br>
+                <input type="text" name="numberRecords" value="5">
+                <br>
+                <input type="text" name="startYear" value="2001">
+                Start Year (optional):
+                <br>
+                <input type="text" name="endYear" value="2005"><br>
+                End Year (optional):
+                <br>
+                <input type="submit" name="search" value="Search">
+                <input type="submit" name="clear" value="Clear">
+            </form>
+
+        </div> <!-- end formContainer -->
+            <div id="results">  
+                <div id="resultsHeader">         
+                Search Results
+                </div> <!-- end resultsHeader -->
+                <ol id="list">
+                        <li>This is a test search result</li>
+                </ol>
+            </div> <!--  end formContainer -->
+    </div> <!-- end container -->
+
+
+<script src="assets/javascript/javascript.js"></script>
+
+</body>
+
+</html>
