@@ -16,7 +16,7 @@ $("#search").on("click", function() {
         method: "GET"
       }).done(function(response) {
       	console.log(response);
-      }
+      });
 
 	//run displayResults function
 
