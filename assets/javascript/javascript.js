@@ -11,7 +11,7 @@ $("#search").on("click", function() {
     var endDate = $("#endYear").val();
     var page = $("#numberRecords").val();
 
-    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?apikey=7cc52f271251486f990d42d1dfc60c68&q="+searchTerm+"&begin_date="+beginDate+"&enddate="+endDate+"&page=" + page;
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?apikey=7cc52f271251486f990d42d1dfc60c68&q="+searchTerm+"&begin_date="+beginDate+"0101"+"&enddate="+endDate+"0101"+"&page=" + page;
 	
 	//call the query
 	$.ajax({
@@ -38,7 +38,7 @@ $("#clear").on("click", function() {
 
 //displayResults function
 function displayResults() {
-
+	$("#list li").html("Check the console log for your results!");
 	//main (title)
 	//section
 	//article date
