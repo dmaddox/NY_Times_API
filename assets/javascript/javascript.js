@@ -28,7 +28,7 @@ $("#button1").on("click", function() {
 		// 	console.log(results[i]);
 		// 	$("#list").text(results[i]);
 
-		// 	// $("#list").append("<li> <tr> <td id='title' class='title'>" + title + "</td> </tr> <tr> <td id='section' class='title'>" + section + "</td> </tr> <tr> <td id='referenceNumber' class='title'>" + referenceNumber + "</td> </tr> <tr> <td id='URL' class='title'>" + URL + "</td> </tr>");
+		// $("#list").append("<li> <table><tr> <td id='title' class='title'>" + title + "</td> </tr> <tr> <td id='section' class='title'>" + section + "</td> </tr> <tr> <td id='referenceNumber' class='title'>" + referenceNumber + "</td> </tr> <tr> <td id='URL' class='title'>" + URL + "</td> </tr> </table>");
 		// }
       });
 
