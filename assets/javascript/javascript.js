@@ -2,6 +2,9 @@
 
 //Search button functionality
 $("#search").on("click", function() {
+
+	//prevent the page from refreshing on submit
+	event.preventDefault();
 	//build the api query 
 	var searchTerm = $("#searchTerm").val();
     var beginDate = $("#startYear").val();
@@ -25,6 +28,8 @@ $("#search").on("click", function() {
 
 //Clear button functionality
 $("#clear").on("click", function() {
+	//prevent the page from refreshing on submit
+	event.preventDefault();
 	//clear search term input field
 	//clear # of records field
 	//clear start year field
@@ -41,5 +46,5 @@ function displayResults() {
 
 	//loop through each result & build the result[i] div
 	//display results
-	$("#results").prepend(place_holder);
+	// $("#results").prepend(place_holder);
 }
