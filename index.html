@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<<<<<<< HEAD
     <link rel="stylesheet" href="assets/style/reset.css">
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
@@ -14,7 +15,7 @@
 
     <header class=jumbotron>
         <div>
-            <img id="magnifyingGlass" src="assets/images/magnifyingGlass.png" alt="magnifying glass">
+
             <span id="headerTitle">New York Times Search</span>
             <img id="newspaper" src="assets/images/newspaper.png" alt="magnifying glass">
         </div>
@@ -28,20 +29,23 @@
             <form id="submitForm" action="/action_page.php">
                 Search Term:
                 <br>
-                <input type="text" name="searchTerm" value="marmots">
+
+                <input type="text" name="searchTerm" value="obama" id="searchTerm">
                 <br>
                 Number of Records to Retrieve
                 <br>
-                <input type="text" name="numberRecords" value="5">
+                <input type="text" name="numberRecords" value="5" id="numberRecords">
                 <br>
-                <input type="text" name="startYear" value="2001">
+                <input type="text" name="startYear" value="2001" id="startYear">
                 Start Year (optional):
                 <br>
-                <input type="text" name="endYear" value="2005"><br>
+                <input type="text" name="endYear" value="2005" id="endYear"><br>
                 End Year (optional):
                 <br>
-                <input type="submit" name="search" value="Search">
-                <input type="submit" name="clear" value="Clear">
+
+                <input id="button1", type="submit" name="search" value="Search">
+                <input id="button2", type="submit" name="clear" value="Clear">
+
             </form>
 
         </div> <!-- end formContainer -->
@@ -50,7 +54,7 @@
                 Search Results
                 </div> <!-- end resultsHeader -->
                 <ol id="list">
-                        <li>This is a test search result</li>
+                        <li></li>
                 </ol>
             </div> <!--  end formContainer -->
     </div> <!-- end container -->
