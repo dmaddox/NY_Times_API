@@ -1,6 +1,18 @@
 
+	var searchTerm = $(this).attr("");
+    var beginDate = $(this).attr("");
+    var endDate = $(this).attr("");
+    var page = $(this).attr("");
 
-
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?apikey=7cc52f271251486f990d42d1dfc60c68&q="+searchTerm+"&begin_date="+beginDate+"&enddate="+endDate+"&page="page;
+	
+	//call the query
+	$.ajax({
+        url: queryURL,
+        method: "GET"
+      }).done(function(response) {
+      	console.log(response);
+      }
 //Search button functionality
 $("#search_button_holder").on("click", function() {
 	//build the api query 
@@ -16,7 +28,7 @@ $("#search_button_holder").on("click", function() {
         url: queryURL,
         method: "GET"
       }).done(function(response) {
-      	console.log();
+      	console.log(response);
       }
 
 	//run displayResults function
