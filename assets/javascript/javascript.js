@@ -1,7 +1,7 @@
 
 
 //Search button functionality
-$("#search").on("click", function() {
+$("#button1").on("click", function() {
 
 	//prevent the page from refreshing on submit
 	event.preventDefault();
@@ -17,17 +17,28 @@ $("#search").on("click", function() {
 	$.ajax({
         url: queryURL,
         method: "GET"
-      }).done(function(response) {
-      	console.log(response);
+      }).done(function(object) {
+      	// console.log(object.response.docs);
+      	var results = object.response.docs;
+      	var title = results[0].headline.main;
+      	console.log(title);
+      	$("#list li").text(title);
+  //     	for (i =0; i < results.length; i++) {
+
+		// 	console.log(results[i]);
+		// 	$("#list").text(results[i]);
+
+		// 	// $("#list").append("<li> <tr> <td id='title' class='title'>" + title + "</td> </tr> <tr> <td id='section' class='title'>" + section + "</td> </tr> <tr> <td id='referenceNumber' class='title'>" + referenceNumber + "</td> </tr> <tr> <td id='URL' class='title'>" + URL + "</td> </tr>");
+		// }
       });
 
-	//run displayResults function
 
-	displayResults();
+
+
 });
 
 //Clear button functionality
-$("#clear").on("click", function() {
+$("#button2").on("click", function() {
 	//prevent the page from refreshing on submit
 	event.preventDefault();
 	//clear search term input field
@@ -36,15 +47,3 @@ $("#clear").on("click", function() {
 	//clear end year field
 });
 
-//displayResults function
-function displayResults() {
-	$("#list li").html("Check the console log for your results!");
-	//main (title)
-	//section
-	//article date
-	//source URL
-
-	//loop through each result & build the result[i] div
-	//display results
-	// $("#results").prepend(place_holder);
-}
