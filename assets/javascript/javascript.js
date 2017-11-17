@@ -4,9 +4,9 @@
 $("#search").on("click", function() {
 	//build the api query 
 	var searchTerm = $("#searchTerm").val();
-    var beginDate = $("#startYear")val();
-    var endDate = $("#endYear")val();
-    var page = $("#numberRecords")val();
+    var beginDate = $("#startYear").val();
+    var endDate = $("#endYear").val();
+    var page = $("#numberRecords").val();
 
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?apikey=7cc52f271251486f990d42d1dfc60c68&q="+searchTerm+"&begin_date="+beginDate+"&enddate="+endDate+"&page=" + page;
 	
