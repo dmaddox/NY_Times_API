@@ -28,6 +28,27 @@ body {
 #headerTitle{
     font-size: 40px;
 }
+#searchTerm{
+    width:100%;
+    padding-bottom: 5px;
+}
+#numberRecords{
+    width:100%;
+padding-bottom: 5px;
+}
+
+#endYear{
+    width:100%;
+padding-bottom: 5px;
+}
+
+
+#startYear{
+    width:100%;
+    padding-bottom: 5px;
+}
+
+
 
 #newspaper{
     height:30px;
